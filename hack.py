@@ -1,6 +1,7 @@
 """This module depletes a heroku free tier user's dyno hours."""
 import time
 import urllib.request
+from datetime import datetime
 
 
 def deplete_hours(app_links):
@@ -21,7 +22,10 @@ def deplete_hours(app_links):
             urllib.request.urlopen(link)
             print("Called: ", link)
 
-        print("Now sleeping for 30 minutes")
+        now = datetime.now()
+        h = now.hour
+        m = now.minute
+        print(f"Now sleeping for 30 minutes starting at: {h}:{m}")
         seconds_in_30_min = 30 * 60
         time.sleep(seconds_in_30_min)
 
@@ -29,9 +33,9 @@ def deplete_hours(app_links):
 if __name__ == '__main__':
     # List the heroku app links here
     heroku_apps = [
-        "https://app1.herokuapp.com/",
-        "https://app2.herokuapp.com/",
-        "https://app3.herokuapp.com/"
+        "https://google.com",
+        "https://apple.com",
+        "https://facebook.com"
     ]
 
     deplete_hours(heroku_apps)
