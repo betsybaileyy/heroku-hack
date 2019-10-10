@@ -26,6 +26,14 @@ Here is a table with how fast you can deplete someone's free hours, and the perc
 | 9         | 4 days 15.111 hours  | 84.57%                  |
 | 10        | 4 days 4 hours       | 86.11%                  |
 
+For learning purposes, we created a simple python script to show how easy it is to drain someone's Heroku hours.
+
+```
+$ python3 hack.py
+```
+
+The script will run indefinitely, and can be ran on any hardware with an internet connection and Python 3.
+
 Now, how can you prevent our super sophisticated hack from impacting your precious Heroku hours? Lets take a look.
 
 STEPS TO PREVENT the HEROKU HACK:
