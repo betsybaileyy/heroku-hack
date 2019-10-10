@@ -38,3 +38,25 @@ Now, how can you prevent our super sophisticated hack from impacting your precio
 
 STEPS TO PREVENT the HEROKU HACK:
 1. Heroku uses "dynos"
+
+If you ever find that you are under this attack, or you just want to have your app running at certain times, we also created a couple bash scripts that can be ran manually, or with `crontab`, to turn on and off your heroku apps.
+
+Running `defense_off.sh` manually:
+```
+$ bash ./defense_off.sh
+```
+or with `crontab` (should already be installed on Mac and Linus machines) every night at 11 PM
+```
+0 23 * * * ./defense_off.sh
+```
+will turn the heroku web dynos off.
+
+Running `defense_on.sh` manually:
+```
+$ bash ./defense_on.sh
+```
+or with `crontab` (should already be installed on Mac and Linus machines) every night at 8 AM
+```
+0 8 * * * ./defense_on.sh
+```
+will turn the heroku web dynos back on.
