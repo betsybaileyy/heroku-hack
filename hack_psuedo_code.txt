@@ -1,0 +1,10 @@
+
+Pings the victim's Heroku every 30 minutes until their free hours run out.
+
+One variable stores a list of all the URLs we want to ping
+
+needs to be reoccurring - so every 30 minutes
+    create a while loop - boolean true conditional
+        a for loop for each link in the list of URLs
+            sends a request to that link
+            

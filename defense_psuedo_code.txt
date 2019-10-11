@@ -1,0 +1,4 @@
+
+User can change the name of their projects in HEROKU
+
+turn on the web dyno for each project
