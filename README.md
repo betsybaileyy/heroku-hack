@@ -1,4 +1,7 @@
 # Welcome to Heroku Hacks!
+===========================
+Heroku logs can't save you now
+------------------------------
 
 #### The goal of this application is to toy with people's "free" hours on Heroku and use up all 100 "free" hours of web hosting time within a matter of days.
 
