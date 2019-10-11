@@ -17,10 +17,10 @@ def deplete_hours(app_links):
             the urls for heroku apps.
 
     """
-    while True:
-        for link in app_links:
-            urllib.request.urlopen(link)
-            print("Called: ", link)
+    while True:                               # true will always be true in this case, so the while loop will never stop.
+        for link in app_links:                 # going through each link in the list of links
+            urllib.request.urlopen(link)        # python command that will ping the link
+            print("Called: ", link)             
 
         now = datetime.now()
         h = now.hour
